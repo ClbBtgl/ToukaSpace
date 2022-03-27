@@ -1,0 +1,232 @@
+body {
+    background: url(https://imgur.com/APBqcZP.png)top left no-repeat fixed, url(https://imgur.com/bZFlIZy.png)bottom right no-repeat fixed, repeating-linear-gradient(0deg, #fff 1px, transparent 2px, transparent 22px) fixed, repeating-linear-gradient(90deg, #fff 1px, transparent 2px, transparent 22px) fixed, linear-gradient(#4267B2, #B079C3 35px) fixed;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+ :before,
+ :after {
+    content: '';
+    position: absolute
+}
+
+ :root {
+    --font-1: Rokkitt, serif;
+    --font-2: Economica, sans-serif;
+    --font-3: Sacramento, cursive;
+    --font-4: 'Black And White Picture', sans-serif;
+    --blue: #4267B2;
+    --bluelight: #DEF4F9;
+    --bluedarck: #D9AAF7;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none
+}
+
+span {
+    display: inline-block
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 300
+}
+
+.main {
+    width: 100%;
+    height: auto;
+    position: relative;
+    font-family: var(--font-2);
+    color: #fff;
+    font-size: 1em
+}
+
+.container {
+    width: 1070px;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+    padding: 25px 10px;
+    display: flex;
+    justify-content: space-between
+}
+
+.photobar {
+    margin-left: 80px;
+    margin-top: 20px;
+    width: 200px;
+}
+
+.speech {
+    margin-top: -20px;
+}
+
+.photobar img {
+    width: 200px;
+    padding: 2px;
+    border-radius: 0px 0px 0px 0px;
+    border: 1px solid #d4d4d4;
+}
+
+.aside {
+    width: 330px;
+    height: 160px;
+    padding: 10px;
+    background: #889BD0;
+    box-shadow: 0 0 0 1px var(--bluedarck), 5px 5px var(--blue);
+    position: fixed;
+    top: 25px
+}
+
+.inner {
+    width: 100%;
+    height: 100%;
+    border: dashed 1px var(--bluedarck);
+    padding: 10px 20px
+}
+
+.aside .inner {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.title {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-family: var(--font-1);
+    color: #fff;
+    background: var(--bluedarck);
+    position: relative;
+    margin-bottom: 10px
+}
+
+.title:before,
+.title:after {
+    width: 0;
+    height: 0;
+    border-top: solid 20px transparent;
+    border-bottom: solid 20px transparent;
+    top: 0
+}
+
+.title:before {
+    border-right: solid 20px #fff;
+    right: 0
+}
+
+.title:after {
+    border-left: solid 20px #fff;
+    left: 0
+}
+
+.aside img {
+    width: 70px;
+    height: 70px;
+    box-shadow: 5px 5px var(--blue);
+    margin-right: 15px
+}
+
+.user h2 {
+    color: var(--bluedarck);
+    font-family: var(--font-3)
+}
+
+.section {
+    width: 450px;
+    height: auto;
+    margin-left: 360px;
+    background: #889BD0;
+    box-shadow: 0 0 0 1px var(--bluedarck), 5px 5px var(--blue);
+    padding: 10px
+}
+
+.title-page {
+    line-height: 44px;
+    font-family: var(--font-4);
+    color: #fff;
+    text-shadow: 2px 2px 3px #000060;
+    margin-bottom: 10px;
+    font-size: 1.6em
+}
+
+.img-big img {
+    width: 390px;
+    height: 300px;
+    margin-bottom: 15px
+}
+
+.desc {
+    font-family: var(--font-1);
+    margin-bottom: 20px
+}
+
+.video {
+    width: 390px;
+    height: 204px;
+    background: #D9AAF7
+}
+
+.nav {
+    width: 180px;
+    height: auto;
+    background: repeating-linear-gradient(0deg, #889BD0 1px, transparent 2px, transparent 22px), repeating-linear-gradient(90deg, #889BD0 1px, transparent 2px, transparent 22px), #889BD0;
+    box-shadow: 0 0 0 1px var(--bluedarck), 5px 5px var(--blue);
+    padding: 10px;
+    position: fixed;
+    right: 20px
+}
+
+.nav .inner {
+    overflow: auto;
+    padding: 10px
+}
+
+ ::-webkit-scrollbar {
+    width: 2px;
+    background-color: #C8C8C8;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background-color: #da9de2;
+}
+
+.col-friend {
+    width: 100%;
+    height: 60%
+}
+
+.row {
+    width: 100%;
+    height: 52px;
+    margin-bottom: 10px;
+    display: flex
+}
+
+.avatar {
+    width: 46px;
+    height: 46px;
+    box-shadow: 5px 5px var(--blue);
+    margin-right: 10px
+}
+
+.infor {
+    line-height: 26px;
+    color: #fff
+}
+
+.infor span {
+    color: var(--bluedarck);
+}
+
+img:hover {
+    transition: all 0.6s ease
+}
